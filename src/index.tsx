@@ -64,7 +64,10 @@ const App = () => {
 
   return (
     <div>
-      <CodeEditor initialValue='yolo' />
+      <CodeEditor
+        initialValue='const yolo = 123'
+        onChange={(value) => setInput(value)}
+      />
       <textarea
         style={{ height: '10rem', width: '20rem' }}
         value={input}
