@@ -64,7 +64,7 @@ const App = () => {
 
   return (
     <div>
-      <CodeEditor />
+      <CodeEditor initialValue='yolo' />
       <textarea
         style={{ height: '10rem', width: '20rem' }}
         value={input}
