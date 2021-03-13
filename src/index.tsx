@@ -1,6 +1,5 @@
 import ReactDOM from 'react-dom'
 import { useState } from 'react'
-
 import CodeEditor from './components/code-editor'
 import 'bulmaswatch/superhero/bulmaswatch.min.css'
 import Preview from './components/preview'
