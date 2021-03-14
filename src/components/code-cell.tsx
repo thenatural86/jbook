@@ -9,10 +9,14 @@ const CodeCell = () => {
   const [code, setCode] = useState('')
 
   useEffect(() => {
-    setTimeout(async () => {
+    const timer = setTimeout(async () => {
       const output = await bundle(input)
       setCode(output)
-    }, 1000)
+    }, 800)
+
+    return () => {
+      clearTimeout(timer)
+    }
   }, [input])
 
   return (
