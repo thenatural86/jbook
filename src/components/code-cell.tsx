@@ -5,8 +5,8 @@ import bundle from '../bundler'
 import Resizable from './resizable'
 
 const CodeCell = () => {
-  const [input, setInput] = useState('')
   const [code, setCode] = useState('')
+  const [input, setInput] = useState('')
   const [err, setErr] = useState('')
 
   useEffect(() => {
